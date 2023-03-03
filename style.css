@@ -1,0 +1,127 @@
+#box {
+
+    width: 650px;
+    height: 500px;
+    background-color:#050210;
+    margin: 0 auto;
+    position: relative;
+}
+#circle-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#fb5bab, #56fba0, #b87aff);
+    border-radius: 300px;
+    margin: 0 auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    filter: brightness(1.3);
+    animation-name: krug_1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+      
+}
+#circle-2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: linear-gradient(#fb5bab, #56fba0, #b87aff);
+    filter: blur(80px);
+    box-shadow: 0 0 30px white;
+
+}
+@keyframes krug_1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+}
+#circle-3 {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background-color: #050210;
+    border: 1px solid #050210;
+    border-radius: 260px;
+    margin: 0 auto;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+#circle-4 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: #050210;
+    border: 1px solid  #050210;
+    border-radius: 260px;
+    margin: 0 auto;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation-name: krug_2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes krug_2 {
+    0% {
+        transform: scale(0, 0);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    10% {
+        transform: scale(0.1, 0.1);
+        background-color:  hsla(240, 1%, 13%, 0.479);  
+    }
+    20% {
+        transform: scale(0.2, 0.2);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    30% {
+        transform: scale(0.3, 0.3);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    40% {
+        transform: scale(0.4, 0.4);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    50% {
+        transform: scale(0.5, 0.5);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    60% {
+        transform: scale(0.6, 0.6);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    70% {
+        transform: scale(0.7, 0.7);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    80% {
+        transform: scale(0.8, 0.8);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    90% {
+        transform: scale(0.9, 0.9);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+    100% {
+        transform: scale(1, 1);
+        background-color:  hsla(240, 1%, 13%, 0.479);
+    }
+}
